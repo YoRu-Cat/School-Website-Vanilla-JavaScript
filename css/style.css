@@ -27,6 +27,13 @@
 
   --transition: all ease 0.4s;
 }
+body {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  /* scrollbar-width: none;  Firefox */
+}
+body::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -101,6 +108,12 @@ nav {
   top: 0;
   z-index: 11;
 }
+.window-scroll {
+  background: var(--color-primary);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  transition: var(--transition);
+}
+
 .nav_container {
   height: 100%;
   display: flex;
@@ -138,4 +151,90 @@ header {
 }
 .header_left p {
   margin: 1rem 0 2.4rem;
+}
+
+.categories {
+  background: var(--color-bg1);
+  height: 29rem;
+}
+.categories h1 {
+  line-height: 1;
+  margin-bottom: 3rem;
+}
+.categories_container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  /* gap: 4rem; */
+}
+.categories_left {
+  margin-right: 4rem;
+}
+.categories_left p {
+  margin: 1rem 0 3rem;
+}
+.categories_right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+.category {
+  background: var(--color-bg2);
+  padding: 2rem;
+  border-radius: 2rem;
+  transition: var(--transition);
+}
+.category:hover {
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.category:nth-child(2) .category_icon {
+  background: var(--color-danger);
+}
+.category:nth-child(3) .category_icon {
+  background: var(--color-success);
+}
+.category:nth-child(4) .category_icon {
+  background: var(--color-warning);
+}
+.category:nth-child(5) .category_icon {
+  background: var(--color-success);
+}
+.category_icon {
+  background: var(--color-primary);
+  padding: 0.7rem;
+  border-radius: 0.9rem;
+}
+.category h5 {
+  margin: 2rem 0 1rem;
+}
+.category p {
+  font-size: 0.85rem;
+}
+
+/* courses  */
+
+.courses {
+  margin-top: 10rem;
+}
+.courses_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.course {
+  background: var(--color-bg1);
+  text-align: center;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+.course:hover {
+  background: transparent;
+  border-color: var(--color-primary);
+}
+.course_info {
+  padding: 2rem;
+}
+.course_info p {
+  margin: 1.2rem 0 2rem;
+  font-size: 0.9rem;
 }
