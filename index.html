@@ -8,7 +8,10 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -314,7 +317,178 @@
       </section>
 
       <!-- end of Faqs -->
+      <section class="container testimonial_container mySwiper">
+        <h2>Students' Testimonials</h2>
+        <div class="swiper-wrapper">
+          <article class="testimonial swiper-slide">
+            <div class="avatar">
+              <img src="./images/avatar1.jpg" alt="" />
+            </div>
+            <div class="testimonial_info">
+              <h5>Diana Ayi</h5>
+              <small>Student</small>
+            </div>
+            <div class="testimonial_body">
+              <p>
+                Studying here has been transformative. The supportive faculty,
+                engaging curriculum, and vibrant campus community have truly
+                prepared me for my future career. I highly recommend this
+                institution to any aspiring student.
+              </p>
+            </div>
+          </article>
+          <article class="testimonial swiper-slide">
+            <div class="avatar">
+              <img src="./images/avatar2.jpg" alt="" />
+            </div>
+            <div class="testimonial_info">
+              <h5>Ernest Achiever</h5>
+              <small>Web Developer</small>
+            </div>
+            <div class="testimonial_body">
+              <p>
+                Studying here has been transformative. The supportive faculty,
+                engaging curriculum, and vibrant campus community have truly
+                prepared me for my future career. I highly recommend this
+                institution to any aspiring student.
+              </p>
+            </div>
+          </article>
+          <article class="testimonial swiper-slide">
+            <div class="avatar">
+              <img src="./images/avatar3.jpg" alt="" />
+            </div>
+            <div class="testimonial_info">
+              <h5>Edem Quist</h5>
+              <small>Student</small>
+            </div>
+            <div class="testimonial_body">
+              <p>
+                Studying here has been transformative. The supportive faculty,
+                engaging curriculum, and vibrant campus community have truly
+                prepared me for my future career. I highly recommend this
+                institution to any aspiring student.
+              </p>
+            </div>
+          </article>
+          <article class="testimonial swiper-slide">
+            <div class="avatar">
+              <img src="./images/avatar4.jpg" alt="" />
+            </div>
+            <div class="testimonial_info">
+              <h5>Hajia Bintu</h5>
+              <small>Student</small>
+            </div>
+            <div class="testimonial_body">
+              <p>
+                Studying here has been transformative. The supportive faculty,
+                engaging curriculum, and vibrant campus community have truly
+                prepared me for my future career. I highly recommend this
+                institution to any aspiring student.
+              </p>
+            </div>
+          </article>
+          <article class="testimonial swiper-slide">
+            <div class="avatar">
+              <img src="./images/avatar5.jpg" alt="" />
+            </div>
+            <div class="testimonial_info">
+              <h5>Jane Doe</h5>
+              <small>Student</small>
+            </div>
+            <div class="testimonial_body">
+              <p>
+                Studying here has been transformative. The supportive faculty,
+                engaging curriculum, and vibrant campus community have truly
+                prepared me for my future career. I highly recommend this
+                institution to any aspiring student.
+              </p>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-pagination"></div>
+      </section>
+
+      <!-- end of testimonial -->
+
+      <footer>
+        <div class="container footer_container">
+          <div class="footer_1">
+            <a href="index.html" class="footer_logo"><h4>YORU</h4></a>
+            <p>
+              Welcome to our community! Here, education meets inspiration and
+              endless opportunities await.
+            </p>
+          </div>
+          <div class="footer_2">
+            <h4>Permalinks</h4>
+            <ul class="permalinks">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="courses.html">Courses</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer_3">
+            <h4>Privacy</h4>
+            <ul class="privacy">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Refund Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer_4">
+            <h4>Contact Us</h4>
+            <div>
+              <p>+01 234 567 8910</p>
+              <p>tech.niko.coding@gmail.com</p>
+            </div>
+            <ul class="footer_socials">
+              <li>
+                <a href="#"
+                  ><i class="ri-facebook-fill" title="FaceBook"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="ri-instagram-line" title="Instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-twitter-x-line" title="X"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-github-fill" title="GitHub"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_copyright">
+          <small>Copyright &copy; YoRu Tech Shop</small>
+        </div>
+      </footer>
+
+      <!-- end of footer  -->
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          800: {
+            slidesPerView: 2,
+          },
+          1200: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
