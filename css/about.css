@@ -1,0 +1,63 @@
+:root {
+  --color-primary: #6c63ff;
+  --color-success: #00bf8e;
+  --color-warning: #f7c94b;
+  --color-danger: #f75842;
+  --color-danger-variant: rgba(247, 88, 66, 0.4);
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.7);
+  --color-black: #000;
+  --color-bg: #1f2641;
+  --color-bg1: #2e3267;
+  --color-bg2: #424890;
+
+  --container-width-lg: 80%;
+  --container-width-md: 90%;
+  --container-width-sm: 94%;
+
+  --transition: all ease 0.4s;
+}
+.about_achievements {
+  margin-top: 3rem;
+}
+.about_achievements-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 5rem;
+}
+.about_achi-right > p {
+  margin: 1.6rem 0 2.5rem;
+}
+.achi_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.achi_card {
+  background: var(--color-bg1);
+  padding: 1.6rem;
+  border-radius: 1rem;
+  text-align: center;
+  transition: var(--transition);
+}
+.achi_card:hover {
+  background: var(--color-bg2);
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+.achi_icon {
+  background: var(--color-danger);
+  padding: 0.2rem 0.8rem;
+  border-radius: 1rem;
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+.achi_card:nth-child(2) .achi_icon {
+  background: var(--color-success);
+}
+.achi_card:nth-child(3) .achi_icon {
+  background: var(--color-warning);
+}
+.achi_card p {
+  margin-top: 1rem;
+}
