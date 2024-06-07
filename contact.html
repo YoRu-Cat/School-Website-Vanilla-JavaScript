@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multipage Education Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <style>
+      .courses {
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <nav>
+        <div class="container nav_container">
+          <a href="index.html"><h4>YORU</h4></a>
+          <ul class="nav_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <button id="open-menu-btn" title="hamburger">
+            <i class="ri-menu-line"></i>
+          </button>
+          <button id="close-menu-btn" title="hamburger">
+            <i class="ri-close-large-line"></i>
+          </button>
+        </div>
+      </nav>
+
+      <!-- End of navbar -->
+
+      <section class="contact">
+        <div class="container contact_container">
+          <aside class="contact_aside">
+            <div class="aside_image">
+              <img src="./images/contact.svg" alt="" />
+            </div>
+            <h2>Contact Us</h2>
+            <p>
+              Connect with us for inquiries or support. We’re here to help,
+              anytime, anywhere!
+            </p>
+            <ul class="contact_details">
+              <li>
+                <i class="ri-phone-line"></i>
+                <h5>+01 234 567 8910</h5>
+              </li>
+              <li>
+                <i class="ri-mail-line"></i>
+                <h5>tech.niko.coding@gmail.com</h5>
+              </li>
+              <li>
+                <i class="ri-map-pin-user-line"></i>
+                <h5>Sydney, Canada</h5>
+              </li>
+            </ul>
+            <ul class="contact_socials">
+              <li>
+                <a href="#"
+                  ><i class="ri-facebook-fill" title="FaceBook"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="ri-instagram-line" title="Instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-twitter-x-line" title="X"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-github-fill" title="GitHub"></i></a>
+              </li>
+            </ul>
+          </aside>
+
+          <form class="contact_form">
+            <div class="form_name">
+              <input
+                type="text"
+                name="First Name"
+                title="First Name"
+                placeholder="First Name"
+                required
+              />
+              <input
+                type="text"
+                name="Lase Name"
+                title="Lase Name"
+                placeholder="Lase Name"
+                required
+              />
+            </div>
+            <input
+              type="email"
+              name="Email Address"
+              placeholder="Your Email Address"
+              required
+            />
+            <textarea
+              name="Message"
+              placeholder="Type your message here"
+              rows="7"
+              required
+            ></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container footer_container">
+          <div class="footer_1">
+            <a href="index.html" class="footer_logo"><h4>YORU</h4></a>
+            <p>
+              Welcome to our community! Here, education meets inspiration and
+              endless opportunities await.
+            </p>
+          </div>
+          <div class="footer_2">
+            <h4>Permalinks</h4>
+            <ul class="permalinks">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="courses.html">Courses</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer_3">
+            <h4>Privacy</h4>
+            <ul class="privacy">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Refund Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer_4">
+            <h4>Contact Us</h4>
+            <div>
+              <p>+01 234 567 8910</p>
+              <p>tech.niko.coding@gmail.com</p>
+            </div>
+            <ul class="footer_socials">
+              <li>
+                <a href="#"
+                  ><i class="ri-facebook-fill" title="FaceBook"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="ri-instagram-line" title="Instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-twitter-x-line" title="X"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-github-fill" title="GitHub"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_copyright">
+          <small>Copyright &copy; YoRu Tech Shop</small>
+        </div>
+      </footer>
+
+      <!-- end of footer  -->
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
