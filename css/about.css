@@ -91,7 +91,7 @@
 }
 .team_member:hover img {
   filter: saturate(1);
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 .team_member-info * {
   text-align: center;
@@ -117,4 +117,43 @@
 }
 .team_member-socials a {
   padding: 1rem;
+}
+
+@media screen and (max-width: 1324px) {
+  .about_achievements {
+    margin-top: 2rem;
+  }
+  .about_achievements-container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  .about_achi-left {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .team_member {
+    padding: 1.5rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .team_container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  .team_member {
+    padding: 1.2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .achi_cards,
+  .team_container {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+  }
+  .team_member {
+    padding: 0;
+  }
+  .team_member p {
+    margin-bottom: 1.5rem;
+  }
 }
