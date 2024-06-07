@@ -30,6 +30,7 @@
 body {
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   /* scrollbar-width: none;  Firefox */
+  background-image: url(/images/bg-texture.png);
 }
 body::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
